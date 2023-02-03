@@ -10,7 +10,7 @@
   <body>
     
    
-    <div class="head">
+    <Nav class="head">
       <div class="logo">
         <h1 class="log">Brilworks</h1>
       </div>
@@ -26,9 +26,9 @@
           <li>Login/Register</li>
         </ul>
       </div>
-    </div>
+    </Nav>
 
-    <div class="body">
+    <section class="body">
       <div class="intro">
         <div class="left_intro">
           <p>
@@ -46,16 +46,27 @@
         </div>
       </div>
       <div class="main">
+
+        <div class="from heading"></div>
+        <!-- this main form s-->
         <form action="#">
-          
-          <input type="text" name="" id="">
-          <input type="text">
+          <label for="Location_name">Location name </label>
+          <input type="text" name="Location_name " id="">
+          <label for="Location_Discription">Location Discription</label>
+          <input type="textarea" name ="Location_Discription" id ="">
+         
+          <input type="radio"  id="Active" name = "Status">
+          <label for="Active">Inactive</label>
+          <input type="radio" id="INActive" name = "Status">
+          <label for=""INActive>Active</label>
+          <button>Submit</button>
           
         </form>
       </div>
+
       <div class="content"></div>
-    </div>
-    <div class="footer">
+    </section>
+    <footer class="footer">
       <div class="aboutus">
         <
         <h1>hello budy</h1>
@@ -71,6 +82,6 @@
             <li> insta gram</li>
         </ul>
       </div>
-    </div>
+    </footer>
   </body>
 </html>
