@@ -223,3 +223,67 @@ footer{
      text-align: center;
      background-color: rgb(20, 19, 19);
 }
+
+
+
+
+/* media querrry for resposnive desing */
+
+/* for   600 px*/
+@media only screen and (max-width: 600px) {
+   
+        .navigation_link{
+            display: none;
+ 
+        }
+        .intro{
+            flex-direction: column;
+        }
+       form{
+        max-width: 300vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    grid-auto-columns: 1rem;
+    background-color: aliceblue;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+        
+       }
+       .main{
+        width:100%;
+        margin: auto;
+    
+    }
+    footer{
+        flex-direction: column;
+        padding-left: 20px;
+    }
+    .aboutus{
+        flex:3;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+       
+        
+        align-items: flex-start;
+    
+    }
+
+    
+  }
+
+/* for   500 px*/
+@media only screen and (max-width: 600px) {
+    body {
+      
+    }
+  }
+
+/* for   800 px*/
+@media only screen and (max-width: 600px) {
+    body {
+      
+    }
+  }
