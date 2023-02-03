@@ -1,10 +1,46 @@
+body{
+    background-color: rgba(0, 0, 0, 0.877);
+    color:white;
+    padding:2rem;
+    font-size: 20px;
+}
+
 .head{
     display:flex;
     flex-direction: row;
-     background-color: black;
+     background-color: rgba(0, 0, 0, 0.274);
      color: aliceblue;
+     border-radius: 20px;
 
 
+}
+.search{
+    display: flex;
+}
+.search >input{
+    flex:2 ;
+    
+    width: 100%;
+    height: 1.5rem;
+    border:none;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+
+
+
+}
+.search >input:focus{
+  
+outline: none;
+
+}
+.search > button {
+    flex: .5;
+    width:100%;
+    height: 1.7rem;
+    border: none;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
 }
 .logo{
     text-align: center;
@@ -24,12 +60,165 @@
 }
 .navigation_link > ul{
     display: flex;
-    gap:10%
+    gap:1rem;
     
 }
 li{
     list-style: none;
 }
-.li{
+
+.body{
     
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+
+}
+.intro{
+    flex:1;
+    
+    display: flex;
+   flex-direction: row;
+   padding: 3rem;  
+    height: 20px;
+
+}
+.left_intro{
+    /* background-color: aqua; */
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+
+   
+}
+.rigth_intro{
+
+    flex: 1;
+    padding: 2rem;
+    overflow: hidden;
+
+    
+
+}
+.rigth_intro > img{
+    object-fit:cover;
+    width: 100%;
+    height: 25vh;
+    border-radius: 20px;
+   
+    
+
+}
+
+.main{
+    width:40vw;
+    margin: auto;
+
+}
+form{
+    max-width: 30vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    grid-auto-columns: 1rem;
+    background-color: aliceblue;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+
+
+}
+form >input {
+    
+     padding: 2px;
+     border-radius: 20px;
+     height: 2rem;
+    margin-top: 1rem;
+     border:none;
+     background-color: rgb(214, 248, 248);
+}
+form >input :focus{
+    outline: none;
+ 
+}
+form >label{
+    
+    padding: 2px;
+    border-radius: 20px;
+    height: 2rem;
+   margin-top: 1rem;
+    border:none;
+    
+}
+.adress{
+    padding: 2px;
+    border-radius: 20px;
+   
+   margin-top: 1rem;
+    border:none;
+    background-color: rgb(214, 248, 248);
+}
+.adress:focus{
+    outline: none;
+}
+.radio{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.button_Add_record{
+    border-radius: 10px;
+    height: 2rem;
+    border:none;
+    background-color: rgb(59, 59, 230);
+    width: 40%;
+
+}
+.from_heading{
+    font-size: medium;
+}
+
+.cut_button{
+     position: absolute;
+     right: 10px;
+     top: 10px;
+}
+
+footer{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.678);
+    padding: 3rem;
+    border-radius: 20px;
+}
+.aboutus{
+    flex:3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+   margin-right: 4rem;
+    
+    align-items: flex-start;
+    
+
+}
+.contactus{
+    flex:2
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    width: 100%;
+}
+.table{
+    width: 100%;
+    border-radius: 20px;
+    padding:2rem;
+     text-align: center;
+     background-color: rgb(20, 19, 19);
 }
