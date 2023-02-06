@@ -113,13 +113,39 @@ li{
 
 }
 /* form /////////////////////////////////  */
+.main-back{
+    background-color: rgba(1, 1, 1, 0.77);
+    
+    transition: all 0.4s ease-in-out;
+    position: fixed;
+    
+    top :0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 400;
+}
+.disblank{
+    display: none; 
+  
+}
 .main{
-    width:40vw;
+    width: 40vw;
     margin: auto;
+    
+    transition: all 0.4s ease-in-out;
+    position: fixed;
+    top:50%;
+    left: 50%;
+transform: translate(-50%, -50%);
+
+    z-index: 999;
+  
 
 }
 form{
     max-width: 30vw;
+    transition: all 0.7s ease-in-out;
     position: relative;
     display: flex;
     flex-direction: column;
