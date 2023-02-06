@@ -69,7 +69,7 @@
         <label for="Active">Inactive</label>
         <input type="radio" id="INActive" name = "Status">
         <label for=""INActive>Active</label></div>
-          <button class="button_Add_record">ADD</button>
+          <button class="button_Add_record" onclick="addData()" >ADD</button>
           
         </form>
 
@@ -163,8 +163,9 @@
       </ul>
     </div>
   </footer>
-
+<!-- script  to perform action start hear -->
   <script>
+    // script for popup
     const addRecordPop = ()=>{
          let data = document.querySelector('#popup');
         
@@ -175,6 +176,26 @@
           else{
             data.classList.add('disblank')
           }
+    }
+    
+// script for data opreation
+    const addData=()=>{
+
+      let Location_name = document.querySelector().value;
+      let Address = document.querySelector().value;
+      
+      if(Location_name && Address){
+// data opreation 
+      }
+      else if(Location_name =="" || Address ==""){
+// error printing
+      }
+      else if( Location_name ==""  &&  Address ==""){
+// /error message
+      }
+      else{
+// check  data you enterd  
+      }
 
 
 
@@ -182,5 +203,6 @@
     }
 
   </script>
+  <!-- script  to perform action end hear -->
   <!-- this is footer end -->
 </html>

@@ -165,6 +165,8 @@ form >input {
     margin-top: 1rem;
      border:none;
      background-color: rgb(214, 248, 248);
+     padding-left: 10px;
+     padding-right: 10px;
 }
 form >input :focus{
     outline: none;
@@ -180,7 +182,7 @@ form >label{
     
 }
 .adress{
-    padding: 2px;
+    padding: 12px;
     border-radius: 20px;
    
    margin-top: 1rem;
@@ -210,6 +212,11 @@ form >label{
      position: absolute;
      right: 10px;
      top: 10px;
+     cursor: pointer;
+     font-family: sans-serif
+}
+.cut_button:hover{
+    transform: scale(1.2);
 }
  /* foootee/////////////////////////////////////// */
 footer{
@@ -232,6 +239,7 @@ footer{
     
 
 }
+/* //table */
 .content {
     max-width: 80%;
     display: flex;
@@ -383,6 +391,11 @@ table{
 
 /* for   600 px*/
 @media only screen and (max-width: 600px) {
+    .content {
+        max-width: 100%;
+      
+      }
+    
    .search{
     display: none;
    }
@@ -447,3 +460,6 @@ table{
 
     
   }
+button{
+    cursor: pointer;
+}
