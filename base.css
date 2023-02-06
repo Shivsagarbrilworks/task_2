@@ -16,7 +16,8 @@ body {
 .search {
   display: flex;
 }
-.search > input {
+
+.search>input {
   flex: 2;
 
   width: 100%;
@@ -25,10 +26,12 @@ body {
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
 }
-.search > input:focus {
+
+.search>input:focus {
   outline: none;
 }
-.search > button {
+
+.search>button {
   flex: 0.5;
   width: 100%;
   height: 1.7rem;
@@ -36,26 +39,31 @@ body {
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
 }
+
 .logo {
   text-align: center;
   flex: 1;
 }
+
 .search {
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .navigation-link {
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.navigation-link > ul {
+
+.navigation-link>ul {
   display: flex;
   gap: 1rem;
 }
+
 li {
   list-style: none;
 }
@@ -67,6 +75,7 @@ li {
   align-items: center;
   /* background-color: aqua; */
 }
+
 .intro {
   flex: 1;
 
@@ -75,6 +84,7 @@ li {
   padding: 3rem;
   height: 20px;
 }
+
 .left-intro {
   /* background-color: aqua; */
   flex: 1;
@@ -82,17 +92,20 @@ li {
   flex-direction: column;
   justify-content: flex-start;
 }
+
 .rigth-intro {
   flex: 1;
   padding: 2rem;
   overflow: hidden;
 }
-.rigth-intro > img {
+
+.rigth-intro>img {
   object-fit: cover;
   width: 100%;
   height: 25vh;
   border-radius: 20px;
 }
+
 /* form /////////////////////////////////  */
 .main-back {
   background-color: rgba(1, 1, 1, 0.77);
@@ -106,9 +119,11 @@ li {
   right: 0;
   z-index: 400;
 }
+
 .disblank {
   display: none;
 }
+
 .main {
   width: 40vw;
   margin: auto;
@@ -121,6 +136,7 @@ li {
 
   z-index: 999;
 }
+
 form {
   max-width: 30vw;
   transition: all 0.7s ease-in-out;
@@ -133,7 +149,8 @@ form {
   padding: 20px;
   border-radius: 10px;
 }
-form > input {
+
+form>input {
   padding: 2px;
   border-radius: 20px;
   height: 2rem;
@@ -143,16 +160,19 @@ form > input {
   padding-left: 10px;
   padding-right: 10px;
 }
-form > input :focus {
+
+form>input :focus {
   outline: none;
 }
-form > label {
+
+form>label {
   padding: 2px;
   border-radius: 20px;
   height: 2rem;
   margin-top: 1rem;
   border: none;
 }
+
 .adress {
   padding: 12px;
   border-radius: 20px;
@@ -161,13 +181,16 @@ form > label {
   border: none;
   background-color: rgb(214, 248, 248);
 }
+
 .adress:focus {
   outline: none;
 }
+
 .radio {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+
 .button-Add-record {
   border-radius: 10px;
   height: 2rem;
@@ -175,6 +198,7 @@ form > label {
   background-color: rgb(59, 59, 230);
   width: 40%;
 }
+
 .from-heading {
   font-size: medium;
   color: #3965dd;
@@ -187,6 +211,7 @@ form > label {
   cursor: pointer;
   font-family: sans-serif;
 }
+
 .cut-button:hover {
   transform: scale(1.2);
 }
@@ -200,6 +225,7 @@ footer {
   padding: 3rem;
   border-radius: 20px;
 }
+
 .aboutus {
   flex: 3;
   display: flex;
@@ -209,6 +235,7 @@ footer {
 
   align-items: flex-start;
 }
+
 /* //table */
 .content {
   max-width: 80%;
@@ -222,6 +249,7 @@ footer {
   background-color: white;
   border-radius: 20px;
 }
+
 .button-div {
   background-color: rgb(248, 237, 237);
   border-top-left-radius: 20px;
@@ -246,6 +274,7 @@ footer {
 
   left: 10px;
 }
+
 .showInactive {
   color: black;
   position: absolute;
@@ -254,6 +283,7 @@ footer {
   display: flex;
   justify-content: center;
 }
+
 .table {
   margin: auto;
   width: 90%;
@@ -264,6 +294,7 @@ footer {
 
   /* background-color: black; */
 }
+
 table {
   color: black;
 
@@ -273,7 +304,8 @@ table {
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
 }
-.fir > td:nth-child(1) {
+
+.fir>td:nth-child(1) {
   font-size: 15px;
   padding: 8px;
   text-align: center;
@@ -282,14 +314,16 @@ table {
   border-top-left-radius: 35px;
   border-bottom-left-radius: 35px;
 }
-.fir > td {
+
+.fir>td {
   font-size: 15px;
   padding: 8px;
   text-align: center;
   border-bottom: 15px solid white;
   background-color: white;
 }
-.fir > td:last-child {
+
+.fir>td:last-child {
   font-size: 15px;
   padding: 8px;
   text-align: center;
@@ -298,6 +332,7 @@ table {
   border-top-right-radius: 35px;
   border-bottom-right-radius: 35px;
 }
+
 td {
   padding: 8px;
   font-size: 10px;
@@ -315,6 +350,7 @@ td:nth-child(1) {
   border-top-left-radius: 35px;
   border-bottom-left-radius: 35px;
 }
+
 td:last-child {
   padding: 8px;
   text-align: center;
@@ -324,19 +360,22 @@ td:last-child {
   border-bottom-right-radius: 35px;
 }
 
-td > div > button {
+td>div>button {
   background-color: transparent;
   border: none;
 }
-td > div > button:nth-child(1) {
+
+td>div>button:nth-child(1) {
   margin-left: 10px;
   color: rgb(141, 211, 35);
 }
-td > div > button:nth-child(2) {
+
+td>div>button:nth-child(2) {
   margin-left: 10px;
   color: red;
 }
-td > div > button:nth-child(3) {
+
+td>div>button:nth-child(3) {
   margin-left: 10px;
   color: blue;
 }
@@ -350,12 +389,43 @@ table {
 .fa-eye {
   color: green;
 }
+
 .fa-trash {
   color: red;
 }
+
 .fa-pen-to-square {
   color: blue;
 }
+
+#total-error {
+  text-align: center;
+  color: red !important;
+}
+
+
+/* Registration form  */
+
+.registration {
+  background-color: rgba(1, 1, 1, 0.77);
+  transition: all 0.4s ease-in-out;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.button-Add-register {
+
+  
+}
+
+.center {
+  text-align: center;
+}
+
 
 /* media querrry for resposnive desing */
 
@@ -368,12 +438,15 @@ table {
   .search {
     display: none;
   }
+
   .navigation-link {
     display: none;
   }
+
   .intro {
     flex-direction: column;
   }
+
   form {
     max-width: 300vw;
     position: relative;
@@ -385,10 +458,12 @@ table {
     padding: 20px;
     border-radius: 10px;
   }
+
   .main {
     width: 100%;
     margin: auto;
   }
+
   footer {
     flex-direction: column;
     padding-left: 20px;
@@ -405,20 +480,23 @@ table {
 
     align-items: flex-start;
   }
-  .aboutus > h1 {
+
+  .aboutus>h1 {
     align-self: center;
   }
 
-  .rigth-intro > img {
+  .rigth-intro>img {
     object-fit: cover;
     width: 100%;
     height: 25vh;
     border-radius: 50%;
   }
-  .contactus > ul > li {
+
+  .contactus>ul>li {
     list-style: none !important;
   }
 }
+
 button {
   cursor: pointer;
 }
