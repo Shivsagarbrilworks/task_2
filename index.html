@@ -51,8 +51,8 @@
         </div>
       </div>
        <!-- this main form start- subtask 1-->
-
-      <main class="main">
+       <div class="main-back disblank" id="popup">
+      <main class="main" id="popup" >
 
          
        
@@ -73,12 +73,13 @@
         </form>
 
       </main>
+    </div>
 
 <!-- this main form end-->
 <!-- this is sub task 2 table -->
 <div class="content">
   <div class="button-div">
-    <button class="button-add">+&nbspAdd</button>
+    <button class="button-add" onclick="addRecordPop()">+&nbspAdd</button>
 
     <div class="showInactive">
       <input type="radio" id="show-inactive" />
@@ -161,5 +162,24 @@
       </ul>
     </div>
   </footer>
+
+  <script>
+    const addRecordPop = ()=>{
+         let data = document.querySelector('#popup');
+         let data2 = document.querySelector("#popup")
+       
+          if(data.classList.contains('disblank') && data2.classList.co){
+
+
+
+
+
+
+          }
+
+
+
+    }
+  </script>
   <!-- this is footer end -->
 </html>
