@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="base.css">
+    <script src="https://kit.fontawesome.com/193f2a0b5b.js" crossorigin="anonymous"></script>
   </head>
   <body>
     
@@ -52,12 +53,12 @@
       </div>
        <!-- this main form start- subtask 1-->
        <div class="main-back disblank" id="popup">
-      <main class="main" id="popup" >
+      <main class="main" >
 
          
        
         <form action="#">
-          <div class="cut_button">X</div>
+          <div class="cut_button" onclick="addRecordPop()">x</div>
           <div class="from_heading"><h1 style="color:rgb(62, 62, 241)">Add Recorde</h1></div>
           <label for="Location_name">Location name </label>
           <input type="text" name="Location_name " id="">
@@ -166,20 +167,20 @@
   <script>
     const addRecordPop = ()=>{
          let data = document.querySelector('#popup');
-         let data2 = document.querySelector("#popup")
+        
        
-          if(data.classList.contains('disblank') && data2.classList.co){
-
-
-
-
-
-
+          if(data.classList.contains('disblank')){
+            data.classList.remove('disblank')
+          }
+          else{
+            data.classList.add('disblank')
           }
 
 
 
+
     }
+
   </script>
   <!-- this is footer end -->
 </html>
