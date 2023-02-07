@@ -64,10 +64,15 @@
           <div class="from-heading">
             <h1>Add Recorde</h1>
           </div>
+<!-- IDnumber -->
 
+          <label for="Location-name">ID Number </label>
+          <input type="text" name="Location-name" placeholder="Amri palce" id="ID">
+<!-- Location name -->
           <label for="Location-name">Location name </label>
           <input type="text" name="Location-name" placeholder="Amri palce" id="Location_name">
 
+<!-- Location-Discription -->
           <label for="Location-Discription">Location Discription</label>
           <textarea class="adress" name="location-Discription" cols="30" rows="10" id="textbox"></textarea>
 
@@ -264,7 +269,10 @@
   const addData = () => {
     let Location_name = document.querySelector("#Location_name").value;
     let Address = document.querySelector("#textbox").value;
+    let ID = document.querySelector("#ID").value;
+    
     console.log(Address);
+    console.log(ID);
 
     console.log(Location_name)
 
@@ -273,30 +281,30 @@
       // data opreation 
       let erro = document.getElementById("total-error");
       erro.innerText = "";
-      let srn = localStorage.getItem("srn")
-      if (srn) {
+
+     
+
+
+ console.log("enter")
+
+
+
+      if (localStorage) {
+        
+
         var data = {
-          srn: srn + 1,
-          ID: srn + 10,
+          srn:localStorage.length+1,
+          ID:  ID,
           LocationName: Location_name,
           address: Address,
-        }
-        console.log(data)
+        } 
+        localStorage.setItem(JSON.stringify(ID),JSON.stringify(data))
+        
 
-        localStorage.setItem("srn", JSON.stringify(data));
+        
 
       }
-      else if (!srn) {
-        var data = {
-          srn: 0,
-          ID: srn + 10,
-          LocationName: Location_name,
-          address: Address,
-
-        }
-        console.log(data)
-        localStorage.setItem("srn", JSON.stringify(data));
-      }
+      
 
  
 
