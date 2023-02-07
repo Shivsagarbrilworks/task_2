@@ -6,14 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
-  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="base.css" />
   <script src="https://kit.fontawesome.com/193f2a0b5b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
   <!-- This navigation start -->
-  <Nav class="head">
+  <nav class="head">
     <div class="logo">
       <h1 class="log">Task 2</h1>
     </div>
@@ -29,7 +28,7 @@
         <li>Login/Register</li>
       </ul>
     </div>
-  </Nav>
+  </nav>
   <!-- this is navigation end -->
 
   <!-- This is body  division start  -->
@@ -55,9 +54,6 @@
     <!-- this main form start- subtask 1-->
     <div class="main-back disblank" id="popup">
       <main class="main">
-
-
-
         <form action="#">
           <span id="total-error"></span>
           <div class="cut-button" onclick="addRecordPop()">x</div>
@@ -67,24 +63,25 @@
           <!-- IDnumber -->
 
           <label for="Location-name">ID Number </label>
-          <input type="text" name="Location-name" placeholder="Amri palce" id="ID">
+          <input type="text" name="Location-name" placeholder="Amri palce" id="ID" />
           <!-- Location name -->
           <label for="Location-name">Location name </label>
-          <input type="text" name="Location-name" placeholder="Amri palce" id="Location_name">
+          <input type="text" name="Location-name" placeholder="Amri palce" id="Location_name" />
 
           <!-- Location-Discription -->
           <label for="Location-Discription">Location Discription</label>
           <textarea class="adress" name="location-Discription" cols="30" rows="10" id="textbox"></textarea>
 
-          <div class="radio"> <input type="radio" id="Active" name="Status">
+          <div class="radio">
+            <input type="radio" id="Active" name="Status" />
             <label for="Active">Inactive</label>
-            <input type="radio" id="INActive" name="Status">
-            <label for="" INActive>Active</label>
+            <input type="radio" id="INActive" name="Status" />
+            <label for="INActive"> Active</label>
           </div>
-          <button class="button-Add-record" type="button" onclick="addData()">ADD</button>
-
+          <button class="button-Add-record" type="button" onclick="addData()">
+            ADD
+          </button>
         </form>
-
       </main>
     </div>
 
@@ -101,7 +98,6 @@
       </div>
       <div class="table">
         <table id="insert_data">
-
           <tr class="fir">
             <td>Sr. No.</td>
             <td>ID</td>
@@ -109,8 +105,6 @@
             <td>Location Description1</td>
             <td>Action</td>
           </tr>
-
-
 
           <!-- <tr>
             <td>1</td>
@@ -139,257 +133,84 @@
               </div>
             </td>
           </tr> -->
-          </tr>
         </table>
       </div>
     </div>
 
-
-
-
-
-
-
-
-
-
     <!-- Registration form  start-->
     <div class="main-back disblank">
       <main class="main center">
-
         <div>
           <form action="#" class="center">
             <span id="total-error"></span>
             <div class="cut-button" onclick="addRecordPop()">x</div>
-            <div class="from-heading ">
+            <div class="from-heading">
               <h1>Register</h1>
             </div>
 
-            <div class="user-img"><img src="" alt="" srcset="">
-              <input type="file">
-
+            <div class="user-img">
+              <img src="" alt="" srcset="" />
+              <input type="file" />
             </div>
             <!-- name  -->
             <label for="fname">First name </label>
-            <input class="center" type="text" name="fname" placeholder="Amri palce" id="fname">
+            <input class="center" type="text" name="fname" placeholder="Amri palce" id="fname" />
             <!-- last name -->
             <label for="lname">Last name </label>
-            <input class="center" type="text" name="lname" placeholder="Amri palce" id="lname">
+            <input class="center" type="text" name="lname" placeholder="Amri palce" id="lname" />
             <!-- email -->
             <label for="Email">Email</label>
-            <input class="center" type="email" name="Email" placeholder="Amri palce" id="fname">
+            <input class="center" type="email" name="Email" placeholder="Amri palce" id="fname" />
             <!-- password -->
             <label for="lname">passoword</label>
-            <input class="center" type="password" name="lname" placeholder="Amri palce" id="lname">
+            <input class="center" type="password" name="lname" placeholder="Amri palce" id="lname" />
             <!-- comfirm passoword -->
             <label for="fname">Comfirm password</label>
-            <input class="center" type="password" name="fname" placeholder="Amri palce" id="fname">
-
+            <input class="center" type="password" name="fname" placeholder="Amri palce" id="fname" />
 
             <div class="radio">
-              <input type="radio" id="male" name="Status">
+              <input type="radio" id="male" name="Status" />
               <label for="male">Male</label>
-              <input type="radio" id="female">
+              <input type="radio" id="female" />
               <label for="female">Female</label>
             </div>
-            <button class="button-Add-register" type="button" onclick="addData()">Register</button>
-
+            <button class="button-Add-register" type="button" onclick="addData()">
+              Register
+            </button>
           </form>
-
-
         </div>
       </main>
-
     </div>
+  </div>
 
-    <!-- Registration form end -->
+  <!-- Registration form end -->
+
+  <footer class="footer">
+    <div class="aboutus">
+      <h1>About Us</h1>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
+        iste sit quam molestiae ut voluptates. Inventore accusantium
+        repellat eum soluta velit harum necessitatibus, laborum facere odit
+        neque alias. Ipsum, sit.
+      </p>
+    </div>
+    <div class="contactus">
+      <h1>Contact Us</h1>
+      <ul style="list-style: square">
+        <li style="list-style: square">instagram</li>
+        <li style="list-style: square">15277shivsagar@gmail.com</li>
+        <li style="list-style: square">8494090499</li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- script  to perform action start hear -->
+  <script src="./script.js">
 
 
-
-
-
-
-    <footer class="footer">
-      <div class="aboutus">
-
-        <h1>About Us</h1>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia iste
-          sit quam molestiae ut voluptates. Inventore accusantium repellat eum
-          soluta velit harum necessitatibus, laborum facere odit neque alias.
-          Ipsum, sit.
-        </p>
-      </div>
-      <div class="contactus">
-        <h1>Contact Us</h1>
-        <ul style="list-style:square">
-          <li style="list-style:square"> instagram</li>
-          <li style="list-style:square"> 15277shivsagar@gmail.com</li>
-          <li style="list-style:square"> 8494090499</li>
-        </ul>
-      </div>
-    </footer>
+  </script>
 
 </body>
-<!-- this is the footer part -->
-
-
-
-
-
-
-
-<!-- script  to perform action start hear -->
-<script>
-
-  // script for popup
-  console.log("halksjdhfk");
-  const addRecordPop = () => {
-    console.log("halksjdhfk");
-
-    let data = document.querySelector('#popup');
-
-
-    if (data.classList.contains('disblank')) {
-      data.classList.remove('disblank')
-    }
-    else {
-      data.classList.add('disblank')
-    }
-  }
-
-  const tableRefres = () => {
-    if (localStorage.getItem("TABLE")) {
-
-
-
-
-
-
-
-      let tabel_data = localStorage.getItem("TABLE");
-      //  converting  readable data from json 
-
-      tabel_data = JSON.parse(tabel_data);
-      tabel_data.map((data, index) => {
-        console.log(data)
-        document.getElementById("insert_data").innerHTML = document.getElementById("insert_data").innerHTML + `
-        <tr>
-            <td>${data.srn}</td>
-            <td>${data.ID}</td>
-            <td>${data.LocationName}</td>
-            <td>${data.address}</td>
-            <td>
-              <div>
-                <button><i class="fa-regular fa-eye"></i>view</button><button><i
-                  class="fa-solid fa-trash"></i>Delete</button><button><i
-                    class="fa-solid fa-pen-to-square"></i>edit</button>
-              </div>
-            </td>
-          </tr>`
-
-
-      })
-    }
-
-
-  }
-
-
-  // script for data opreation
-  const addData = () => {
-    let Location_name = document.querySelector("#Location_name").value;
-    let Address = document.querySelector("#textbox").value;
-    let ID = document.querySelector("#ID").value;
-
-    console.log(Address);
-    console.log(ID);
-
-    console.log(Location_name)
-
-
-    if (Location_name && Address) {
-      // data opreation 
-      let erro = document.getElementById("total-error");
-      erro.innerText = "";
-
-
-
-
-
-
-
-
-      if (localStorage) {
-        console.log("data")
-
-
-
-
-        if (localStorage.getItem("TABLE")) {
-          let lo = localStorage.getItem("TABLE")
-
-          lo = JSON.parse(lo)
-          var data = {
-            srn: lo.length,
-            ID: ID,
-            LocationName: Location_name,
-            address: Address,
-          }
-
-
-          lo.push(data);
-          localStorage.removeItem("TABLE")
-          localStorage.setItem("TABLE", JSON.stringify(lo))
-          tableRefres();
-        }
-        else {
-          var data = {
-            srn: 0,
-            ID: ID,
-            LocationName: Location_name,
-            address: Address,
-          }
-
-          localStorage.setItem("TABLE", JSON.stringify([{ ...data }]))
-          tableRefres();
-        }
-
-
-
-
-
-      }
-
-
-
-      // localStorage.setItem("TABLE",)
-
-
-
-
-
-    }
-    else if (Location_name == "" || Address == "") {
-      // error printing
-      let erro = document.querySelector("#total-error");
-      erro.innerHTML = "Invalid data"
-    }
-
-
-    else if (Location_name == "" && Address == "") {
-      // /error message
-      let erro = document.querySelector("#total-error");
-      erro.innerHTML = "Invalid data"
-    }
-
-
-
-
-
-  }
-  tableRefres()
-</script>
-
 
 </html>

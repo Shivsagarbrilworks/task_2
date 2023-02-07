@@ -235,6 +235,10 @@ footer {
 
   align-items: flex-start;
 }
+.contactus {
+  flex: 2;
+ 
+}
 
 /* //table */
 .content {
@@ -256,30 +260,35 @@ footer {
   border-top-right-radius: 20px;
   width: 100%;
   height: 50px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 10px;
   border-bottom: 3px solid gray;
 }
 
 .button-add {
   width: 100px;
-  margin: 10px 0;
+  margin: 0 10px;
   position: absolute;
-
   border-radius: 10px;
   border: none;
   background-color: #3965dd;
+  
   color: white;
-  top: 2%;
+  
   box-shadow: 0 1px 4px 1px rgb(59, 59, 230);
 
-  left: 10px;
+  /* left: 10px; */
 }
 
 .showInactive {
   color: black;
   position: absolute;
   right: 15px;
-  top: 5%;
+  /* top: 2%; */
+  margin: 0 10px;
   display: flex;
   justify-content: center;
 }
