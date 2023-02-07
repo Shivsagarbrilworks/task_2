@@ -107,6 +107,14 @@ li {
 }
 
 /* form /////////////////////////////////  */
+.text{
+  text-align:center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  margin: 5px;
+}
 .main-back {
   background-color: rgba(1, 1, 1, 0.77);
 
@@ -288,7 +296,7 @@ footer {
   position: absolute;
   right: 15px;
   /* top: 2%; */
-  margin: 0 10px;
+  margin: 0;
   display: flex;
   justify-content: center;
 }

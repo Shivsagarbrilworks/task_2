@@ -31,9 +31,9 @@
             <td>${data.address}</td>
             <td>
               <div>
-                <button><i class="fa-regular fa-eye"></i>view</button>
-                <button><i class="fa-solid fa-trash"></i>Delete</button>
-                <button><i class="fa-solid fa-pen-to-square"></i>edit</button>
+                <button Onclick = "view(${data.srn})"><i class="fa-regular fa-eye"></i>view</button>
+                <button Onclick= "delet()"><i class="fa-solid fa-trash"></i>Delete</button>
+                <button Onclick= "edit()"><i class="fa-solid fa-pen-to-square"></i>edit</button>
               </div>
             </td>
           </tr>`;
@@ -44,6 +44,27 @@
 
 
     };
+  const close_box=()=>{
+    const data = document.getElementById("view_data");
+    data.classList.add('disblank')
+  }
+    
+    const view=(srn)=>{
+        const data = document.getElementById("view_data");
+    data.classList.remove('disblank')
+
+       let table =  localStorage.getItem("TABLE");
+       table = JSON.parse(table);
+      
+      
+        let cur = table.filter((data)=>{
+            return data.srn == srn
+         })
+        
+        
+    }
+
+
 
     // script for data opreation
     const addData = () => {
