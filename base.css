@@ -443,6 +443,32 @@ table {
   text-align: center;
 }
 
+/* delet popup button */
+.button-popup{
+  width: 100%;
+  margin: 10px;
+  display: flex;
+  justify-content: space-evenly;
+
+}
+.yes{
+  background-color: rgb(255, 54, 47);
+
+color: #f1f4ff;
+font-size: 20px;
+width: 30%;
+border: none;
+border-radius: 10px;
+}
+.no{
+  background-color: greenyellow;
+  color: #f1f4ff;
+  font-size: 20px;
+  width: 30%;
+  border: none;
+  border-radius: 10px;
+  }
+  
 
 /* media querrry for resposnive desing */
 

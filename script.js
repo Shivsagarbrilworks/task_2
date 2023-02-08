@@ -32,7 +32,7 @@
             <td>
               <div>
                 <button Onclick = "view(${data.srn})"><i class="fa-regular fa-eye"></i>view</button>
-                <button Onclick= "delet()"><i class="fa-solid fa-trash"></i>Delete</button>
+                <button Onclick= "open_delet_popup(${data.srn})"><i class="fa-solid fa-trash"></i>Delete</button>
                 <button Onclick= "edit()"><i class="fa-solid fa-pen-to-square"></i>edit</button>
               </div>
             </td>
@@ -44,14 +44,62 @@
 
 
     };
+
+
   const close_box=()=>{
     const data = document.getElementById("view_data");
     data.classList.add('disblank')
   }
+  // for delet
+   const open_delet_popup =(srn)=>{
+    console.log("hello1")
+    const data = document.getElementById("Delet_veiw");
+    data.classList.remove('disblank')
+    
+    const call_fun = document.getElementById("button-popup");
+    console.log(data)
+    call_fun.innerHTML=`<button onclick="Delet(${srn})" type="submit" class="yes"> Yes</button> <button onclick="close_box()" type="submit" class="no"> N0</button>` 
+  }
+    // to delet data
+  const Delet = (srn) =>{
+    console.log("inside-delet")
+    let table;
+    let cur;
+
+    
+    
+
+    table = localStorage.getItem("TABLE");
+    table = JSON.parse(table);
+
+
+    table.map((data,i)=> console.log(data,i) )
+
+    cur = table.splice(()=>{
+      table.map((data,i)=> {
+        if(srn == data.srn){
+          return i;
+        }
+      
+      })
+    },1)
+    localStorage.removeItem("TABLE");
+    localStorage.setItem("TABLE", JSON.stringify(cur));
+   
+   
+   
+     
+
+  }
+   // to view data
+
     
     const view=(srn)=>{
-        const data = document.getElementById("view_data");
-    data.classList.remove('disblank')
+      const ID = document.getElementById("ID_veiw_data");
+      const name_veiw_data =document.getElementById("name_veiw_data")
+      const location_drcr= document.getElementById("location_drcr_veiw_data")
+      const viewbox = document.getElementById("view_data");
+    viewbox.classList.remove('disblank')
 
        let table =  localStorage.getItem("TABLE");
        table = JSON.parse(table);
@@ -60,8 +108,10 @@
         let cur = table.filter((data)=>{
             return data.srn == srn
          })
-        
-        
+
+         ID.value =cur.ID;
+         name_veiw_data.value = cur.LocationName;
+         location_drcr.value = cur.Address;  
     }
 
 
@@ -122,10 +172,12 @@
         // error printing
         let erro = document.querySelector("#total-error");
         erro.innerHTML = "Invalid data";
+
       } else if (Location_name == "" && Address == "") {
         // /error message
         let erro = document.querySelector("#total-error");
         erro.innerHTML = "Invalid data";
+
       }
     };
     tableRefres();

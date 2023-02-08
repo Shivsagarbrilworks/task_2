@@ -106,51 +106,44 @@
             <td>Action</td>
           </tr>
 
-          <!-- <tr>
-            <td>1</td>
-            <td>12</td>
-            <td>BHOPAL GUM</td>
-            <td>hello</td>
-            <td>
-              <div>
-                <button><i class="fa-regular fa-eye"></i>view</button><button><i
-                    class="fa-solid fa-trash"></i>Delete</button><button><i
-                    class="fa-solid fa-pen-to-square"></i>edit</button>
-              </div>
-            </td>
-          </tr> -->
-
-          <!-- <tr>
-            <td>3</td>
-            <td>12</td>
-            <td>BHOPAL GUM</td>
-            <td>hello</td>
-            <td>
-              <div>
-                <button><i class="fa-regular fa-eye"></i>view</button><button><i
-                    class="fa-solid fa-trash"></i>Delete</button><button><i
-                    class="fa-solid fa-pen-to-square"></i>edit</button>
-              </div>
-            </td>
-          </tr> -->
         </table>
       </div>
     </div>
+    <!-- to view data -->
 
     <div class="main-back disblank" id="view_data">
 
       <form class="main text">
         <div class="cut-button" onclick="close_box()">x</div>
         <label for="ID">ID</label>
-        <input type="text" class="text" id="ID" value="${cur[0].ID}">
+        <input type="text" class="text" id="ID_veiw_data" value="${cur[0].ID}" disabled>
 
         <label for="name">Location Name</label>
-        <input type="text" class="text" id="name" value="${cur[0].LocationName}">
+        <input type="text" class="text" id="name_veiw_data" value="${cur[0].LocationName}" disabled>
 
         <label for="location_drcr">Location Description</label>
-        <input type="text" class="text" id="location_drcr" value="${cur[0].address}">
+        <input type="text" class="text" id="location_drcr_veiw_data" value="${cur[0].address}" disabled>
       </form>
     </div>`
+
+    <!-- to delet data -->
+    <div class="main-back disblank" id="Delet_veiw">
+
+      <form class="main text">
+
+        <div class="cut-button" onclick="close_box()">x</div>
+        <h1 style="color:red;">Alert</h1>
+        <p>Are you sure you want to delet this data !!
+        </p>
+        <p>1. Press yes to comfirm and proceed</p>
+        <p>2. Press No to go back</p>
+        <div class="button-popup" id="button-popup">
+
+        </div>
+
+      </form>
+    </div>`
+
 
     <!-- Registration form  start-->
     <div class="main-back disblank">
