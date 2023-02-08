@@ -13,15 +13,15 @@ const addRecordPop = () => {
 };
 
 const tableRefres = () => {
-  // document.getElementById("insert_data").innerHTML = "";
+  document.getElementById("insert_data").innerHTML = "";
   if (localStorage.getItem("TABLE")) {
     let tabel_data = localStorage.getItem("TABLE");
     //  converting  readable data from json
 
     tabel_data = JSON.parse(tabel_data);
     tabel_data.forEach((data) => {
-      let ID = String(data.ID)
-  
+      let ID = String(data.ID);
+
       document.getElementById("insert_data").innerHTML += `
         <tr>
             <td>${data.srn}</td>
@@ -47,39 +47,31 @@ const close_box_edit = () => {
   const data = document.getElementById("edit_data_popup");
   data.classList.add("disblank");
 };
-const edit_data_popup=(srn,ID)=>{
+const edit_data_popup = (srn, ID) => {
   const data = document.getElementById("edit_data_popup");
   data.classList.remove("disblank");
   const call_fun = document.getElementById("Ebutton-popup");
-  console.log(call_fun );
+  console.log(call_fun);
   call_fun.innerHTML = `<button onclick="edit_data(${srn},${ID})" type="submit" class="no">Update Data</button> `;
-  
-
-
-}
-const edit_data = (srn,ID) => {
- let data = localStorage.getItem("TABLE");
- data = JSON.parse(data);
-  let cur_data = data.filter((data) => data.srn !=srn);
- let new_loc = document.getElementById("E_Location_name").value;
- let new_address =  document.getElementById("E_textbox").value;
- console.log(new_loc)
- console.log(new_address)
- var updated_data = {
-  srn: srn,
-  ID: ID,
-  LocationName:new_loc,
-  address:new_address,
 };
- 
-cur_data.push(updated_data);
-localStorage.removeItem("TABLE");
-localStorage.setItem("TABLE",JSON.stringify(cur_data));
+const edit_data = (srn, ID) => {
+  let data = localStorage.getItem("TABLE");
+  data = JSON.parse(data);
+  let cur_data = data.filter((data) => data.srn != srn);
+  let new_loc = document.getElementById("E_Location_name").value;
+  let new_address = document.getElementById("E_textbox").value;
+  console.log(new_loc);
+  console.log(new_address);
+  var updated_data = {
+    srn: srn,
+    ID: ID,
+    LocationName: new_loc,
+    address: new_address,
+  };
 
-
- 
-
-
+  cur_data.push(updated_data);
+  localStorage.removeItem("TABLE");
+  localStorage.setItem("TABLE", JSON.stringify(cur_data));
 };
 
 
@@ -98,26 +90,24 @@ const open_delet_popup = (srn) => {
 const Delet = (srn) => {
   console.log("inside-delet");
   let table;
-  let cur;
-
+ 
   table = localStorage.getItem("TABLE");
   table = JSON.parse(table);
-
-  if (table.length <=1) {
+  console.log(table);
+ 
+  if (table.length <= 1) {
     localStorage.removeItem("TABLE");
   } else {
-    cur = table.splice(() => {
-      table.map((data, i) => {
-        if (srn == data.srn) {
-          return i;
-        }
-      });
-    }, 1)
+   let cur = table.filter((data)=> data.srn != srn);
+   console.log(cur)
 
     localStorage.removeItem("TABLE");
     localStorage.setItem("TABLE", JSON.stringify(cur));
   }
 };
+
+
+
 // to view data
 
 const view = (srn) => {
