@@ -73,19 +73,26 @@
     table = JSON.parse(table);
 
 
-    table.map((data,i)=> console.log(data,i) )
+  
 
-    cur = table.splice(()=>{
-      table.map((data,i)=> {
-        if(srn == data.srn){
-          return i;
-        }
-      
-      })
-    },1)
-    localStorage.removeItem("TABLE");
-    localStorage.setItem("TABLE", JSON.stringify(cur));
    
+if(table.length==1){
+  localStorage.removeItem("TABLE");
+
+}else{
+  cur = table.splice(()=>{
+    table.map((data,i)=> {
+      if(srn == data.srn){
+        return i;
+      }
+    
+    })
+  },1)
+
+  localStorage.removeItem("TABLE");
+    localStorage.setItem("TABLE", JSON.stringify(cur));
+}
+    
    
    
      
@@ -108,10 +115,10 @@
         let cur = table.filter((data)=>{
             return data.srn == srn
          })
-
-         ID.value =cur.ID;
-         name_veiw_data.value = cur.LocationName;
-         location_drcr.value = cur.Address;  
+       
+         ID.value = cur[0].ID;
+         name_veiw_data.value = cur[0].LocationName;
+         location_drcr.value = cur[0].address;  
     }
 
 
