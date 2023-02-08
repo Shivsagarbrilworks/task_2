@@ -105,45 +105,72 @@
             <td>Location Description1</td>
             <td>Action</td>
           </tr>
-
         </table>
       </div>
     </div>
     <!-- to view data -->
 
     <div class="main-back disblank" id="view_data">
-
       <form class="main text">
         <div class="cut-button" onclick="close_box()">x</div>
         <label for="ID">ID</label>
-        <input type="text" class="text" id="ID_veiw_data" value="" disabled>
+        <input type="text" class="text" id="ID_veiw_data" value="" disabled />
 
         <label for="name">Location Name</label>
-        <input type="text" class="text" id="name_veiw_data" value="" disabled>
+        <input type="text" class="text" id="name_veiw_data" value="" disabled />
 
         <label for="location_drcr">Location Description</label>
         <textarea type="text" class="adress text" id="location_drcr_veiw_data" value="" disabled></textarea>
       </form>
-    </div>`
+    </div>
+    `
 
     <!-- to delet data -->
     <div class="main-back disblank" id="Delet_veiw">
-
       <form class="main text">
-
         <div class="cut-button" onclick="close_box()">x</div>
-        <h1 style="color:red;">Alert</h1>
-        <p>Are you sure you want to delet this data !!
-        </p>
+        <h1 style="color: red">Alert</h1>
+        <p>Are you sure you want to delet this data !!</p>
         <p>1. Press yes to comfirm and proceed</p>
         <p>2. Press No to go back</p>
-        <div class="button-popup" id="button-popup">
-
-        </div>
-
+        <div class="button-popup" id="button-popup"></div>
       </form>
-    </div>`
+    </div>
+    `
 
+    <!-- to edit data -->
+    <div class="main-back disblank" id="edit_data_popup">
+      <main class="main">
+        <form action="javascript:location.reload(true)">
+          <span id="total-error"></span>
+          <div class="cut-button" onclick="addRecordPop()">x</div>
+          <div class="from-heading">
+            <h1>Add Recorde</h1>
+          </div>
+          <!-- IDnumber -->
+
+          <label for="Location-name">ID Number </label>
+          <input type="text" name="Location-name" placeholder="Amri palce" id="ID" disabled />
+          <!-- Location name -->
+          <label for="Location-name">Location name </label>
+          <input type="text" name="Location-name" placeholder="Amri palce" id="Location_name" />
+
+          <!-- Location-Discription -->
+          <label for="Location-Discription">Location Discription</label>
+          <textarea class="adress" name="location-Discription" cols="30" rows="10" id="textbox"></textarea>
+
+          <div class="radio">
+            <input type="radio" id="Active" name="Status" />
+            <label for="Active">Inactive</label>
+            <input type="radio" id="INActive" name="Status" />
+            <label for="INActive"> Active</label>
+          </div>
+          <button class="button-Add-record" type="submit" onclick="addData()">
+            ADD
+          </button>
+        </form>
+      </main>
+    </div>
 
     <!-- Registration form  start-->
     <div class="main-back disblank">
@@ -191,19 +218,16 @@
     </div>
   </div>
 
-
-
-
   <!-- Registration form end -->
 
   <footer class="footer">
     <div class="aboutus">
       <h1>About Us</h1>
       <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
-        iste sit quam molestiae ut voluptates. Inventore accusantium
-        repellat eum soluta velit harum necessitatibus, laborum facere odit
-        neque alias. Ipsum, sit.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia iste
+        sit quam molestiae ut voluptates. Inventore accusantium repellat eum
+        soluta velit harum necessitatibus, laborum facere odit neque alias.
+        Ipsum, sit.
       </p>
     </div>
     <div class="contactus">
@@ -217,11 +241,7 @@
   </footer>
 
   <!-- script  to perform action start hear -->
-  <script src="./script.js">
-
-
-  </script>
-
+  <script src="./script.js"></script>
 </body>
 
 </html>
