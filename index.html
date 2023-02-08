@@ -63,7 +63,7 @@
           <!-- IDnumber -->
 
           <label for="Location-name">ID Number </label>
-          <input type="text" name="Location-name" placeholder="Amri palce" id="ID" />
+          <input type="number" name="Location-name" placeholder="Amri palce" id="ID" />
           <!-- Location name -->
           <label for="Location-name">Location name </label>
           <input type="text" name="Location-name" placeholder="Amri palce" id="Location_name" />
@@ -114,7 +114,7 @@
       <form class="main text">
         <div class="cut-button" onclick="close_box()">x</div>
         <label for="ID">ID</label>
-        <input type="text" class="text" id="ID_veiw_data" value="" disabled />
+        <input type="number" class="text" id="ID_veiw_data" value="" disabled />
 
         <label for="name">Location Name</label>
         <input type="text" class="text" id="name_veiw_data" value="" disabled />
@@ -141,23 +141,20 @@
     <!-- to edit data -->
     <div class="main-back disblank" id="edit_data_popup">
       <main class="main">
-        <form action="javascript:location.reload(true)">
+        <form action="#">
           <span id="total-error"></span>
-          <div class="cut-button" onclick="addRecordPop()">x</div>
+          <div class="cut-button" onclick="close_box_edit()">x</div>
           <div class="from-heading">
-            <h1>Add Recorde</h1>
+            <h1>Edit Recorde</h1>
           </div>
-          <!-- IDnumber -->
 
-          <label for="Location-name">ID Number </label>
-          <input type="text" name="Location-name" placeholder="Amri palce" id="ID" disabled />
           <!-- Location name -->
           <label for="Location-name">Location name </label>
-          <input type="text" name="Location-name" placeholder="Amri palce" id="Location_name" />
+          <input type="text" name="Location-name" placeholder="Amri palce" id="E_Location_name" />
 
           <!-- Location-Discription -->
           <label for="Location-Discription">Location Discription</label>
-          <textarea class="adress" name="location-Discription" cols="30" rows="10" id="textbox"></textarea>
+          <textarea class="adress" name="location-Discription" cols="30" rows="10" id="E_textbox"></textarea>
 
           <div class="radio">
             <input type="radio" id="Active" name="Status" />
@@ -165,12 +162,17 @@
             <input type="radio" id="INActive" name="Status" />
             <label for="INActive"> Active</label>
           </div>
-          <button class="button-Add-record" type="submit" onclick="addData()">
-            ADD
-          </button>
+          <div class="button-popup" id="Ebutton-popup">
+
+          </div>
+
+
+
         </form>
       </main>
     </div>
+
+
 
     <!-- Registration form  start-->
     <div class="main-back disblank">
